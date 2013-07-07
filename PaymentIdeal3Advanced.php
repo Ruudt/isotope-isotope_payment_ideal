@@ -377,7 +377,7 @@ class PaymentIdeal3Advanced extends IsotopePayment
 	 */
 	public function checkoutReview()
 	{
-		$global $objPage;
+		global $objPage;
 
 		if ($issuerName = $this->issuerLookup($_SESSION['CHECKOUT_DATA']['payment']['idealIssuer']))
 		{
