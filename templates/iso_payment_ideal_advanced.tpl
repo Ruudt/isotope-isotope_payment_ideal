@@ -1,0 +1,14 @@
+<form class="ideal_payment ideal_payment_advanced" action="<?php echo $this->action; ?>" method="post">
+<div class="formbody">
+	<input type="hidden" name="REQUEST_TOKEN" value="{{request_token}}">
+	<input type="hidden" name="FORM_SUBMIT" value="iso_mod_checkout_payment_backup">
+	<input type="hidden" name="order_id" value="<?php echo $this->order_id; ?>" />
+	<input type="hidden" name="order_description" value="<?php echo $this->order_description; ?>" />
+	<h2><?php echo $this->name; ?></h2>
+	<p id="idealComment"><?php echo $this->message; ?></p>
+	<p id="idealIssuer"><label><?php echo $this->issuer_label; ?></label> <?php echo $this->issuer_options; ?></p>
+	<p id="idealAmount"><label><?php echo $this->amount_label; ?></label> <strong><?php echo $this->amount; ?></strong></p>
+	<p id="idealDescription"><label><?php echo $this->order_description_label; ?></label> <strong><?php echo $this->order_description; ?></strong></p>
+</div>
+<div class="submit_container"><input class="submit" type="submit" name="submit" value="<?php echo $this->submit_value; ?>" /></div>
+</form>
