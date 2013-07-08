@@ -614,7 +614,7 @@ class PaymentIdeal3Advanced extends IsotopePayment
 
 		// Log exception and return error message
 		$this->log('Issuer request exception (' . $errorCode . '). Error message: ' . $errorMsg, 'PaymentIdeal3Advanced issuerRequest()', TL_ERROR);
-		$_SESSION['CHECKOUT_DATA']['paymentResponseMsg'] = $GLOBALS['TL_LANG']['MSC']['idealIssuerRequestError'] . ($consumerMessage ? ' (' . $consumerMessage . ') ' : '')		. $GLOBALS['TL_LANG']['MSC']['idealTryAgainOrContact'];
+		$_SESSION['CHECKOUT_DATA']['paymentResponseMsg'] = $GLOBALS['TL_LANG']['MSC']['idealIssuerRequestError'] . ($consumerMessage ? ' (' . $consumerMessage . ') ' : '');
 
 		return false;
 	}
