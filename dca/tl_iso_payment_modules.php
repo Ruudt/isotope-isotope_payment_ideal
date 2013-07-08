@@ -31,7 +31,7 @@
 $GLOBALS['TL_DCA']['tl_iso_payment_modules']['palettes'] += array(
     'ideal' => '{type_legend},type,name,label;{note_legend:hide},note;{config_ideal_basic_status},ideal_basic_accept_status_risk;{config_ideal},ideal_sub_id,ideal_acceptant_id,ideal_acceptant_key,ideal_url_test,ideal_url_production,ideal_testmode,ideal_order_description,ideal_url_service;{config_legend},new_order_status,postsale_mail,minimum_total,maximum_total,countries,shipping_modules,product_types;{price_legend:hide},price,tax_class;{enabled_legend},enabled',
     'idealadvanced' => '{type_legend},type,name,label;{note_legend:hide},note;{config_ideal},ideal_sub_id,ideal_acceptant_id,ideal_acceptant_key,ideal_acceptant_key_file,ideal_priv_cert_file,ideal_publ_cert_file,ideal_use_publ_test_cert_file,ideal_url_test,ideal_url_production,ideal_unique_urls,ideal_testmode,ideal_order_description,ideal_url_service,ideal_cache_path;{config_legend},new_order_status,postsale_mail,minimum_total,maximum_total,countries,shipping_modules,product_types;{price_legend:hide},price,tax_class;{enabled_legend},enabled',
-    'ideal3advanced' => '{type_legend},type,name,label;{note_legend:hide},note;{config_ideal},ideal_sub_id,ideal_acceptant_id,ideal_acceptant_key,ideal_acceptant_key_file,ideal_priv_cert_file,ideal_publ_cert_file,ideal_use_publ_test_cert_file,ideal_url_test,ideal_url_production,ideal_unique_urls,ideal_testmode,ideal_order_description,ideal_url_service,ideal_cache_path,ideal_verbose_logging;{config_legend},new_order_status,postsale_mail,minimum_total,maximum_total,countries,shipping_modules,product_types;{price_legend:hide},price,tax_class;{enabled_legend},enabled'
+    'ideal3advanced' => '{type_legend},type,name,label;{note_legend:hide},note;{config_ideal},ideal_sub_id,ideal_acceptant_id,ideal_acceptant_key,ideal_acceptant_key_file,ideal_priv_cert_file,ideal_publ_cert_file,ideal_use_publ_test_cert_file,ideal_url_test,ideal_url_production,ideal_unique_urls,ideal_testmode,ideal_order_description,ideal_cache_path,ideal_verbose_logging;{config_legend},new_order_status,postsale_mail,minimum_total,maximum_total,countries,shipping_modules,product_types;{price_legend:hide},price,tax_class;{enabled_legend},enabled'
 );
 
 $GLOBALS['TL_DCA']['tl_iso_payment_modules']['palettes']['__selector__'][] = 'ideal_use_publ_test_cert_file';
@@ -167,4 +167,3 @@ $GLOBALS['TL_DCA']['tl_iso_payment_modules']['fields'] += array(
 		'eval'					=> array('tl_class'=>'w100'),
 	),
 );
-
